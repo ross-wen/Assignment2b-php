@@ -44,17 +44,23 @@
     <main class="mdl-layout__content">
       <div class="mdl-layout__tab-panel is-active" id="calculator">
         <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-          <h1>Input Diameter</h1>
-        <!-- Textfield with Floating Label -->
-        <form action="handler.php" method="post">
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <label class="mdl-textfield__label" for="diameter">Diameter</label>
-            <input class="mdl-textfield__input" type="text" name="diameter">
+          <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+            <div class="mdl-card__supporting-text">
+              <h1>Input Diameter</h1>
+            </div>
+            <div class="mdl-card__actions"></div>
+              <!-- Textfield with Floating Label -->
+              <form action="handler.php" method="post">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <label class="mdl-textfield__label" for="diameter">Diameter</label>
+                  <input class="mdl-textfield__input" type="text" name="diameter">
+                </div>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" >
+                  Submit
+                </button>
+              </form>
+            </div>
           </div>
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" >
-            Submit
-          </button>
-        </form>
         </section>
       </div>
     </main>
