@@ -24,7 +24,7 @@
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
+          <a href="#calculator" class="mdl-layout__tab is-active">Calculator</a>
           <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
             <i class="material-icons" role="presentation">add</i>
             <span class="visuallyhidden">Add</span>
@@ -32,20 +32,21 @@
         </div>
       </header>
     </div>
-    <center>
-      <h1>Input Diameter</h1>
-      <!-- Textfield with Floating Label -->
-      <form action="handler.php" method="post">
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <label class="mdl-textfield__label" for="diameter">Diameter</label>
-          <input class="mdl-textfield__input" type="text" name="diameter">
-        </div>
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" >
-          Submit
-        </button>
-      </form>
-    </center>
-
+    <main class="mdl-layout__content">
+      <div class="mdl-layout__tab-panel is-active" id="calculator">
+        <h1>Input Diameter</h1>
+        <!-- Textfield with Floating Label -->
+        <form action="handler.php" method="post">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <label class="mdl-textfield__label" for="diameter">Diameter</label>
+            <input class="mdl-textfield__input" type="text" name="diameter">
+          </div>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" >
+            Submit
+          </button>
+        </form>
+      </div>
+    </main>
   </body>
   
 </html>
